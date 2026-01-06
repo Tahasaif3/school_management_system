@@ -8,7 +8,7 @@ import { Modal } from "@/components/ui/modal";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import {
-  HomeWork,
+  Book,
   BookOpen,
   Calendar,
   Clock,
@@ -121,7 +121,7 @@ export default function HomeworkPage() {
             <p className="text-gray-500">Manage assignments and homework</p>
           </div>
           <Button onClick={() => setShowModal(true)}>
-            <HomeWork className="w-4 h-4 mr-2" />
+            <Book className="w-4 h-4 mr-2" />
             Assign Homework
           </Button>
         </div>
@@ -131,7 +131,7 @@ export default function HomeworkPage() {
           <Card className="bg-blue-50">
             <CardContent className="pt-4">
               <div className="flex items-center gap-2">
-                <HomeWork className="w-5 h-5 text-blue-600" />
+                <Book className="w-5 h-5 text-blue-600" />
                 <span className="text-sm text-blue-600">Total</span>
               </div>
               <div className="text-2xl font-bold mt-1">{homeworkList.length}</div>
@@ -252,13 +252,13 @@ export default function HomeworkPage() {
         {homeworkList.length === 0 && (
           <Card>
             <CardContent className="py-12 text-center">
-              <HomeWork className="w-12 h-12 mx-auto text-gray-300 mb-4" />
+              <Book className="w-12 h-12 mx-auto text-gray-300 mb-4" />
               <h3 className="text-lg font-semibold text-gray-900">No Homework Assigned</h3>
               <p className="text-gray-500 mt-1">
                 Get started by assigning your first homework.
               </p>
               <Button onClick={() => setShowModal(true)} className="mt-4">
-                <HomeWork className="w-4 h-4 mr-2" />
+                <Book className="w-4 h-4 mr-2" />
                 Assign Homework
               </Button>
             </CardContent>
